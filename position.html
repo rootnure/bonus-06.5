@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .swim-container {
+            /* position: relative; */
+            border: 1px solid tomato;
+        }
+        .box {
+            border: 1px dashed blue;
+            width: 200px;
+        }
+        /* .ring {
+            position: relative;
+            left: 50px;
+            top: -30px;
+        } */
+
+        /* .ring {
+            position: absolute;
+            top: 40px;
+            left: 100px;
+        } */
+
+        /* .ring {
+            position: sticky;
+            top: 0;
+        } */
+        .ring {
+            position: fixed;
+            top: 200px;
+            left: 50px;
+        }
+
+        .dummy {
+            border: 1px solid turquoise;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="swim-container">
+        <div class="box boy"><img src="./swim/boy.svg" alt=""></div>
+        <div class="box ring"><img src="./swim/ring.svg" alt=""></div>
+        <div class="box water"><img src="./swim/water.svg" alt=""></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    <div class="dummy"></div>
+    
+    <h3>CSS Position</h3>
+    <ol>
+        <!-- flow related -->
+        <li>Static</li>
+        <li>Relative <small>changes the postion against the current positon without leaving the current spot</small></li>
+        <li>Absolute <small>changes the postion against the parent or root positon and leaving the current spot</small></li>
+        <!-- scroll related -->
+        <li>Fixed <small>will leave the real position and stay on the specified position according to the webpage</small></li>
+        <li>Sticky <small>no effect on real postion or spot but will stay in the specified position specified according to parent or root</small></li>
+    </ol>
+</body>
+</html>
