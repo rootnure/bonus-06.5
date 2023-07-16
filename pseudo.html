@@ -23,6 +23,28 @@
         a:visited {
             color: red;
         }
+
+        /* child pseudo class */
+        li:nth-child(2n) {
+            background-color: gray;
+        }
+        li:nth-child(2n+1) {
+            background-color: skyblue;
+        }
+        li:nth-child(5) {
+            color: red;
+        }
+        li:nth-child(3n+1){
+            font-weight: 700;
+        }
+        li:first-child {
+            color: white;
+            background-color: blue;
+        }
+        li:last-child {
+            color: blue;
+            background-color: tomato;
+        }
     </style>
 </head>
 
@@ -34,6 +56,19 @@
     <a href="https://google.com/">Google</a>
     <a href="https://askleo.com/sites-in-my-history/">Ask Lio</a>
     <a href="https://www.reddit.com/r/iphone/comments/zjypwe/i_have_never_visited_this_site_before/">Reddit</a>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ul>
 </body>
 
 </html>
